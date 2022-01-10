@@ -1,5 +1,7 @@
 import csv
 import os
+import random
+
 import requests
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
@@ -38,10 +40,13 @@ async def etsy(query):
                 if 'title' in result:
                     titles.append(result['title'])
 
+            our_suggestion = taxonomy_paths + tags
+
             return {
+                'our_suggestion': random.choice(our_suggestion),
                 'category': set(taxonomy_paths),
+                'tags': set(tags),
                 'title': titles,
-                'tags': set(tags)
             }
 
 
