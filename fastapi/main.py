@@ -40,10 +40,8 @@ async def etsy(query):
                 if 'title' in result:
                     titles.append(result['title'])
 
-            our_suggestion = taxonomy_paths + tags
-
             return {
-                'our_suggestion': random.choice(our_suggestion),
+                'our_suggestion': random.choice(taxonomy_paths),
                 'category': set(taxonomy_paths),
                 'tags': set(tags),
                 'title': titles,
@@ -70,6 +68,8 @@ async def download_fav():
 @app.get("/get_fav/{age_group}/{occasion}", tags=["favourite"])
 async def get_fav(age_group: str, occasion: str):
     fav_item = []
+    age_group = age_group.lower()
+    occasion = occasion.lower()
 
     if os.path.exists('favourite.csv'):
         df = pd.read_csv('favourite.csv')
@@ -77,7 +77,15 @@ async def get_fav(age_group: str, occasion: str):
             if df['age_group'][index] == age_group:
                 if df['occasion'][index] == occasion:
                     fav_item.append(df['item'][index])
-        return fav_item
+        try:
+            choice = random.choice(fav_item)
+        except IndexError:
+            choice = fav_item
+
+        return {
+            "our_suggestion": choice,
+            "all_items": fav_item
+        }
     else:
         return 'file not found'
 
