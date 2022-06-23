@@ -11,11 +11,12 @@ class recipient extends StatefulWidget {
 class _recipientState extends State<recipient> {
   var questionIndex = 0;
 
-  var questions = ['select recipient', 'what is the occasion?'];
+  var questions = ['select recipient', 'what is the occasion'];
+  String answer = '';
 
   void recipientSelected() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => occasion()));
+        context, MaterialPageRoute(builder: (context) => occasion(answer)));
   }
 
   @override
@@ -33,24 +34,14 @@ class _recipientState extends State<recipient> {
             RaisedButton(
               child: const Text('HIM'),
               onPressed: () {
+                answer = 'him';
                 recipientSelected();
               },
             ),
             RaisedButton(
               child: const Text('HER'),
               onPressed: () {
-                recipientSelected();
-              },
-            ),
-            RaisedButton(
-              child: const Text('TEEN'),
-              onPressed: () {
-                recipientSelected();
-              },
-            ),
-            RaisedButton(
-              child: const Text('KIDS'),
-              onPressed: () {
+                answer = 'her';
                 recipientSelected();
               },
             ),
