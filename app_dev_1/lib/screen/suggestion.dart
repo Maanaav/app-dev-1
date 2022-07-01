@@ -12,7 +12,7 @@ class Album {
 
   factory Album.fromJson(Map<String, dynamic> json) {
     return Album(
-      ourSuggestion: 'We suggest: ${json['our_suggestion']}',
+      ourSuggestion: '${json['our_suggestion']}',
     );
   }
 }
@@ -48,20 +48,29 @@ class _SuggestionState extends State<Suggestion> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gift Suggestion App'),
+        backgroundColor: Colors.black87,
+        centerTitle: true,
       ),
       body: Container(
+        padding: const EdgeInsets.all(20),
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('suggestion for ${widget.recipient}\'s ${widget.occasion}'),
+            Text('We suggestion for ${widget.recipient == 'him' ? 'his' : 'her'} ${widget.occasion}:',
+              style: const TextStyle(fontSize: 25)),
+            const SizedBox(height: 20),
             FutureBuilder<Album>(
               future: futureAlbum,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return Text(snapshot.data!.ourSuggestion);
+                  return Text(snapshot.data!.ourSuggestion, style: const TextStyle(fontSize: 20),);
                 } else if (snapshot.hasError) {
                   return Text('${snapshot.error}');
                 }
-                return const CircularProgressIndicator();
+                return const CircularProgressIndicator(color: Colors.black,);
               },
             )
           ],

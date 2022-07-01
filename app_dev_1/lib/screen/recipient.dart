@@ -11,7 +11,7 @@ class recipient extends StatefulWidget {
 class _recipientState extends State<recipient> {
   var questionIndex = 0;
 
-  var questions = ['select recipient', 'what is the occasion'];
+  var questions = ['Select recipient', 'What is the occasion'];
   String answer = '';
 
   void recipientSelected() {
@@ -25,27 +25,61 @@ class _recipientState extends State<recipient> {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Gift Suggestion App'),
+          backgroundColor: Colors.black87,
+          centerTitle: true,
         ),
-        body: Column(
-          children: [
-            Text(
-              questions[0],
-            ),
-            RaisedButton(
-              child: const Text('HIM'),
-              onPressed: () {
-                answer = 'him';
-                recipientSelected();
-              },
-            ),
-            RaisedButton(
-              child: const Text('HER'),
-              onPressed: () {
-                answer = 'her';
-                recipientSelected();
-              },
-            ),
-          ],
+        body: Container(
+          padding: const EdgeInsets.all(20),
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                questions[0],
+                style: const TextStyle(fontSize: 25),
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: RaisedButton(
+                      color: Colors.black,
+                      padding: EdgeInsets.zero,
+                      child:
+                          const Icon(Icons.boy, size: 100, color: Colors.white),
+                      onPressed: () {
+                        answer = 'him';
+                        recipientSelected();
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: RaisedButton(
+                      color: Colors.black,
+                      padding: EdgeInsets.zero,
+                      child: const Icon(Icons.girl,
+                          size: 100, color: Colors.white),
+                      onPressed: () {
+                        answer = 'her';
+                        recipientSelected();
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
