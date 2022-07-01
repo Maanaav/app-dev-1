@@ -59,7 +59,7 @@ class _SuggestionState extends State<Suggestion> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('We suggestion for ${widget.recipient == 'him' ? 'his' : 'her'} ${widget.occasion}:',
+            Text('Our suggestion for ${widget.recipient == 'him' ? 'his' : 'her'} ${widget.occasion}:',
               style: const TextStyle(fontSize: 25)),
             const SizedBox(height: 20),
             FutureBuilder<Album>(
