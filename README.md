@@ -10,11 +10,15 @@ When the user first opens the app, the user has to select the recipient’s gend
 
 # Screenshots
 <p align = "center">
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen1.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen2.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen3.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen4.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen6.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/phone/screen5.png" width="400" />
-  <img src="https://github.com/Abhitay/UIDAI-hackathon-Problem-Statement-2/blob/main/assets/screen/database.PNG" width="800" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture1.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture2.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture3.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture4.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture5.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture6.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture7.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture8.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture9.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture10.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture11.png" width="400" />
 </p>
