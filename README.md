@@ -10,15 +10,15 @@ When the user first opens the app, the user has to select the recipient’s gend
 
 # Screenshots
 <p align = "center">
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture1.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture2.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture3.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture4.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture5.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture6.png" width="400" />
-  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture7.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture1.png" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture2.png" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture3.png" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture5.png" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture6.png" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture7.png" />
   <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture8.png" width="400" />
   <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture9.png" width="400" />
   <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture10.png" width="400" />
   <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture11.png" width="400" />
+  <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture4.png" />
 </p>
