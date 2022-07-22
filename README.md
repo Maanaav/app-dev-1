@@ -8,6 +8,8 @@ Another endpoint of FastAPI is to save good suggestions from Etsy API on an exce
 Another endpoint available on FastAPI is to retrieve data from this excel sheet. This is the only endpoint available directly through the flutter app. It takes gender and occasion as input.
 When the user first opens the app, the user has to select the recipient’s gender, followed by the occasion of gifting. An appropriate gift option is displayed on the excel sheet.
 
+paper referred: https://www.researchgate.net/publication/229943031_Gifts_and_Gifting/link/5c04f7cd299bf182ad99e46f/download
+
 # Screenshots
 <p align = "center">
   <img src="https://github.com/Maanaav/app-dev-1/blob/main/fastapi/screenshots/Picture1.png" />
